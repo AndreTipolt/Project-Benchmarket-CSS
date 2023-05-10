@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sideBar.css">
+    <link rel="shortcut icon" href="/img/logoBenchmark.png" type="image/x-icon">
+    <title>Benchmark</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <button class="btn-icon-header" onclick="toggleSideBar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="img-header">
+            <a href="#"><img src="img/logolucas.png " alt="Logo LF" class="logo-img-header"></a>
+        </div>
+        <nav class="navigation-header" id="navigation-header">
+            <button class="btn-icon-header" onclick="toggleSideBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            <a href="#" class="a-header " id="home">Home</a>
+            <a href="#" class="a-header">Quem Somos</a>
+            <a href="#" class="a-header a-login" id="login">Login</a>
+        </nav>
+    </header>
+    <main class="content" id="content" onclick="closeSideBar()">
+        <div class="parallax parallax-principal">
+            <h1 class="title-promotions">As melhores promoções</h1>
+        </div>
+        <nav class="top">
+            <div class="item-nav">
+                <a href="#carne">Carnes</a>
+            </div>
+            <div class="item-nav">
+                <a href="#frutas">Frutas</a>
+            </div>
+            <div class="item-nav">
+                <a href="#verduras">Verduras</a>
+            </div>
+            <div class="item-nav">
+                <a href="#bebidas">Bebidas</a>
+            </div>
+            <div class="item-nav">
+                <a href="#limpeza">Limpeza</a>
+            </div>
+        </nav>
+        <section class="oft">
+            <div class="carnes">
+                <p>Ofertas para o seu churrasco</p>
+            </div>
+            <div class="bebidas">
+                <p>Ofertas para sua noite</p>
+            </div>
+            <div class="frutas">
+                <p>Ofertas de frutas</p>
+            </div>
+        </section>
+        <section class="parallax-carne" id="carne">
+            <h1 class="title-parallax">Carnes</h1>
+        </section>
+        <section class="compras">
+            <div class="card-c">
+                <img src="img/picanha800.png" alt="">
+                <span class="produto">Picanha</span>
+                <span class="preco">R$ 25,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/fralda (2).png" alt="">
+                <span class="produto">Fralda</span>
+                <span class="preco">R$ 19,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/maminha.png" alt="">
+                <span class="produto">Maminha</span>
+                <span class="preco">R$ 29,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/CoxaoMole.png" alt="">
+                <span class="produto">Coxão mole</span>
+                <span class="preco">R$ 30,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/cupim.png" alt="">
+                <span class="produto">Cupim</span>
+                <span class="preco">R$ 15,80</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/picanha_resfriada.png" alt="">
+                <span class="produto">Picanha temperada</span>
+                <span class="preco">R$ 23,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/alcatra.png" alt="">
+                <span class="produto">Alcatra</span>
+                <span class="preco">R$ 27,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/Contrafile.png" alt="">
+                <span class="produto">Contrafilé</span>
+                <span class="preco">R$ 30,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/File Mignon.png" alt="">
+                <span class="produto">Filé Mignon</span>
+                <span class="preco">R$ 25,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/linguica.png" alt="">
+                <span class="produto">Linguiça</span>
+                <span class="preco">R$ 20,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/calabresa.png" alt="">
+                <span class="produto">Calabresa</span>
+                <span class="preco">R$ 19,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/acem.png" alt="">
+                <span class="produto">Acém</span>
+                <span class="preco">R$ 17,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+        </section>
+        <section class="parallax-frutas" id="frutas">
+            <h1>Frutas</h1>
+        </section>
+
+        <section class="compras">
+            <div class="card-c">
+                <img src="img/abacate.png" alt="">
+                <span class="produto">Abacate</span>
+                <span class="preco">R$ 2,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/abacaxi.png" alt="">
+                <span class="produto">Abacaxi</span>
+                <span class="preco">R$ 6,70</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/banana.jpg" alt="">
+                <span class="produto">Banana</span>
+                <span class="preco">R$ 1,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/GOIABA.png" alt="">
+                <span class="produto">Goiaba</span>
+                <span class="preco">R$ 1,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/LARANJA.png" alt="">
+                <span class="produto">Laranja</span>
+                <span class="preco">R$ 5,25</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/melancia.png" alt="">
+                <span class="produto">Melancia</span>
+                <span class="preco">R$ 9,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/roma.png" alt="">
+                <span class="produto">Roma</span>
+                <span class="preco">R$ 4,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/MACA.png" alt="">
+                <span class="produto">Maça</span>
+                <span class="preco">R2,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/mamao.png" alt="">
+                <span class="produto">Mamão</span>
+                <span class="preco">R$ 6,25</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/limao.png" alt="">
+                <span class="produto">Limão</span>
+                <span class="preco">R$ 1,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/uva.png" alt="">
+                <span class="produto">Uva</span>
+                <span class="preco">R$ 6,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/pessego.png" alt="">
+                <span class="produto">Pessego</span>
+                <span class="preco">R$ 5,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+
+        </section>
+
+        <section class="parallax-verduras" id="verduras">
+            <h1>Verduras</h1>
+        </section>
+        <section class="compras">
+            <div class="card-c">
+                <img src="img/BROCOLIS.png" alt="">
+                <span class="produto">Brocolis</span>
+                <span class="preco">R$ 3,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/cenoura.png" alt="">
+                <span class="produto">Cenoura</span>
+                <span class="preco">R$ 2,57</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/alface.png" alt="">
+                <span class="produto">Alface</span>
+                <span class="preco">R$ 1,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/TOMATE.png" alt="">
+                <span class="produto">Tomate</span>
+                <span class="preco">R$ 2,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/CEBOLA.png" alt="">
+                <span class="produto">Cebola</span>
+                <span class="preco">R$ 7,35</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/ABOBORA.png" alt="">
+                <span class="produto">Abobora</span>
+                <span class="preco">R$ 9,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/berinjela.png" alt="">
+                <span class="produto">Berinjela</span>
+                <span class="preco">R$ 2,25</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/couve-flor.png" alt="">
+                <span class="produto">Couve flor</span>
+                <span class="preco">R$ 2,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/espinafre.jpg" alt="">
+                <span class="produto">Espinafre</span>
+                <span class="preco">R$ 1,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/pepino.png" alt="">
+                <span class="produto">Pepino</span>
+                <span class="preco">R$ 1,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/batata.png" alt="">
+                <span class="produto">Batata</span>
+                <span class="preco">R$ 3,49</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/BETERRABA.png" alt="">
+                <span class="produto">Beterraba</span>
+                <span class="preco">R$ 3,21</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+        </section>
+
+        <section class="parallax-bebidas" id="bebidas">
+            <h1>Bebidas</h1>
+        </section>
+        <section class="compras">
+            <div class="card-c">
+                <img src="img/agua.png" alt="">
+                <span class="produto">Àgua</span>
+                <span class="preco">R$ 1,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/coca-cola.png" alt="">
+                <span class="produto">Coca-cola</span>
+                <span class="preco">R$ 3,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/redbull.png" alt="">
+                <span class="produto">Red bull</span>
+                <span class="preco">R$ 9,75</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/puro malte.png" alt="">
+                <span class="produto">Puro malte</span>
+                <span class="preco">R$ 6,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/vinho-tinto.png" alt="">
+                <span class="produto">Vinho tinto</span>
+                <span class="preco">R$ 14,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/monster.png" alt="">
+                <span class="produto">Monster</span>
+                <span class="preco">R$ 9,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/tnt.png" alt="">
+                <span class="produto">TNT</span>
+                <span class="preco">R$ 8,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/burn.jpg" alt="">
+                <span class="produto">Brun</span>
+                <span class="preco">R$ 9,75</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/agua-de-coco.png" alt="">
+                <span class="produto">Agua de coco</span>
+                <span class="preco">R$ 5,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/suco-de-uva.jpg" alt="">
+                <span class="produto">Suco de uva</span>
+                <span class="preco">R$ 8,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/bacardi.png" alt="">
+                <span class="produto">Bacardi </span>
+                <span class="preco">R$ 20,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/JACK-DANIELS-.png" alt="">
+                <span class="produto">Jack daniels</span>
+                <span class="preco">R$ 66,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+        </section>
+        <section class="parallax-limpeza" id="limpeza">
+            <h1>Limpeza</h1>
+        </section>
+        <section class="compras">
+            <div class="card-c">
+                <img src="img/sabao-em-po-omo.png" alt="">
+                <span class="produto">Sabao em po</span>
+                <span class="preco">R$ 6,99</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/tertegente.png" alt="">
+                <span class="produto">Detergente</span>
+                <span class="preco">R$ 3,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/desinfetante.png" alt="">
+                <span class="produto">Desinfetante</span>
+                <span class="preco">R$ 6,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/agua-sanitaria.png" alt="">
+                <span class="produto">Agua sanitaria</span>
+                <span class="preco">R$ 9,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/limpa-vidros.png" alt="">
+                <span class="produto">Limpa vidro</span>
+                <span class="preco">R$ 5,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/limpador multiuso.png" alt="">
+                <span class="produto">Limpador multiuso</span>
+                <span class="preco">R$ 1,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/esponja de aco.jpg" alt="">
+                <span class="produto">Esponja de aço</span>
+                <span class="preco">R$ 2,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/pano_multiuso.png" alt="">
+                <span class="produto">Pano multiuso</span>
+                <span class="preco">R$ 3,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/lustra_moveis.png" alt="">
+                <span class="produto">Lustra moveis</span>
+                <span class="preco">R$ 6,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/amaciante.png" alt="">
+                <span class="produto">Amaciente</span>
+                <span class="preco">R$ 8,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/alcool gel.png" alt="">
+                <span class="produto">Alcool em gel</span>
+                <span class="preco">R$ 4,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/sabao em barra.png" alt="">
+                <span class="produto">Sabao em barra</span>
+                <span class="preco">R$ 6,50</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+            <div class="card-c">
+                <img src="img/odorizador-de-ambientes.png" alt="">
+                <span class="produto">Odorizador de ambiente</span>
+                <span class="preco">R$ 7,00</span>
+                <a class="add" href="#">Add Carrinho</a>
+            </div>
+
+        </section>
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa-brands fa-facebook"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+
+            <section class="form-contact">
+                <h2 class="display-6">Fale Conosco</h2>
+                <div class="form-input-text">
+                    <form action="">
+                        <input type="text" name="name" class="input-form form-control" placeholder="Nome">
+                        <input type="text" name="email" class="input-form form-control" placeholder="Email">
+                        <input type="text" name="about" class="input-form form-control" placeholder="Assunto">
+                        <input type="text" name="message" class="input-form form-control" placeholder="Mensagem">
+                    </form>
+                    <button type="submit" id="btn-submit-form">Enviar</button>
+                </div>
+            </section>
+            <section class="mb-4">
+                
+            </section>
+            <section class="">
+                <div class="row names-work">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="display-6" id="title-names">Nome</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">André Tipolt Lopes <label class="rgm-member"> 33510148</label> </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Caio Marques <label class="rgm-member"> 33675091</label></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Gustavo Miguel da Silva <label class="rgm-member"> 133518793</label></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Lucas Leandro Souza <label class="rgm-member"> 32202415</label></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Lucas Brandão Cabral <label class="rgm-member"> 33274690</label></a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Thiago Possa <label class="rgm-member"> 20051778</label></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 rgms">
+                        <h5 id="rgm-title">RGM</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">33510148</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">33675091</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">133518793</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">32202415</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">33274690</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">20051778</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+    <script src="js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/fa4981f7e8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

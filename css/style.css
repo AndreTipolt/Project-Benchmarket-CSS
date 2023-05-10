@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --color-black: #000;
+    --color-dark1: #ffffff;
+    --color-dark2: #476aee;
+    --color-dark3: #ffffff;
+    --color-dark4: #ffffff;
+    --color-dark5: #ffffff;
+
+    --color-purple: #b040ff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark1);
+    color: var(--color-black);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.parallax {
+
+    background-image: url("../img/fundo-mercado.jpg");
+
+
+    height: 100%;
+
+    /* fundo img*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+
+    /*posição do texto*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.parallax h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffe484;
+    padding: 10px 35px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.parallax-principal {
+    height: 400px;
+}
+
+.show-products {
+    width: 100%;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 10px;
+
+}
+
+.nav-products {
+    margin-right: 10px;
+    background-color: #cecece;
+}
+
+.products {
+    background-color: red;
+}
+
+#about {
+    background-color: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+.top {
+    background-color: #476aee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    font-size: 1.2em;
+}
+
+.top a {
+    text-decoration: none;
+    color: white;
+}
+
+.oft {
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.carnes {
+    background-image: url('../img/carnes.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.carnes p {
+    font-size: 1.8em;
+    color: white;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.bebidas {
+    background-image: url('../img/bebidass.png');
+    background-position: 0px -390px;
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 15px;
+}
+
+.bebidas p {
+    font-size: 1.8em;
+    color: white;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.frutas {
+    background-image: url('../img/frutas.jpg');
+    background-position: 0px -390px;
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.frutas p {
+    font-size: 1.8em;
+    color: white;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.compras {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card-c {
+    height: 350px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 390px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card-c img {
+    width: 170px;
+    margin: 0 auto;
+}
+
+.produto {
+    font-size: 1.2em;
+}
+
+.preco {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-top: -5px;
+}
+
+.add {
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #476aee;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.parallax-carne {
+    background-image: url('../img/fundo-churrasco.png');
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-carne h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffe484;
+    padding: 10px 35px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-frutas {
+    background-image: url('../img/frutas-fundo2.png');
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-frutas h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffe484;
+    padding: 10px 35px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-verduras {
+    background-image: url('../img/fundo-vegetal1.png');
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-verduras h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffe484;
+    padding: 10px 35px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-bebidas {
+    background-image: url('../img/fundo-bebidas.png');
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-bebidas h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffe484;
+    padding: 10px 35px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-limpeza {
+    background-image: url('../img/fundo-limpeza.jpg');
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-limpeza h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: white;
+    background-color: #ffe484;
+    padding: 10px 35px;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    z-index: 30943723799742973;
+}
+.names-work{
+    display: flex;
+    justify-content: center;
+}
+.names-work li{
+    margin: 10px 0;
+}
+.names-work a{
+    text-decoration: none;
+}
+
+.rgm-member{
+    display: none;
+}
+
+.form-contact{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 750px;
+    margin: auto;
+    padding: 15px;
+}
+
+.form-contact input[type="text"]{
+   display: block;
+}
+.form-input-text form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+#btn-submit-form{
+    width: 80%;
+    margin: 7px;
+    border-radius: 9px;
+    height: 30px;
+    background-color: #476aee;
+    color: #fff;
+    border: none;
+}
+
+.form-input-text input{
+    display: inline;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+#title-names, #rgm-title{
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 742px) {
+    .parallax h1 {
+        text-align: center;
+        padding: 0 10px;
+        font-size: 2.1em;
+    }
+
+    .parallax {
+        height: 300px;
+    }
+
+    .oft div {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .oft {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    .top {
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+    }
+
+    .item-nav {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #cecece;
+    }
+
+    .item-nav a {
+        margin-left: 10px;
+        padding: 8px 0;
+        display: block;
+        padding-bottom: 8px;
+    }
+
+    .last-item-nav {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 409px){
+    .card-c{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 369px){
+    .card-c{
+        width: 155px;
+    }
+}
+@media screen and (max-width: 767px){
+    .rgms{
+        display: none;
+    }
+    .rgm-member{
+        display: inline-block;
+        color: #5e7ef3;
+    }
+}
+@media screen and (max-width: 574px){
+    .form-input-text form{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    #btn-submit-form{
+        width: 94%;
+    }
+    .form-input-text input{
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .form-contact{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,132 @@
+:root{
+    --color-black: #000;
+    --color-dark1: #ffffff;
+    --color-dark2: #dbdbdb;
+    --color-dark3: #c0bcbc;
+    --color-dark4: #585858;
+    --color-dark5: #e7e6e6;
+
+    --color-purple: #b040ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-black);
+}
+
+.logo-img-header{
+    width: 150px;
+}
+
+.header, .navigation-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    background-color: #476aee;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 1;
+}
+
+.navigation-header{
+    z-index: 2;
+    font-size: 0.9em;
+    gap: 3em;
+}
+
+.a-header{
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 3;
+}
+.active{
+    background-color: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+.content{
+    font-size: 0.9em;
+    padding-top: 10px;
+}
+
+.btn-icon-header{
+    background-color: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1029px){
+    .btn-icon-header{
+        display: block;
+    }
+    .navigation-header{
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #4c64bd;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        padding-top: 40px;
+        animation: 1s;
+        margin-left: -100vw;
+        }
+    @keyframes showSideBar {
+        from { margin-left: -100vw; }
+        top { margin-left: -10vw; }
+    }
+}
+
+@media screen and (max-width: 419px){  
+    .navigation-header{
+        font-size: 0.9em;
+    }
+    .active{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 358px){  
+    .navigation-header{
+        font-size: 0.8em;
+    }
+    .active{
+        font-size: 0.9em;
+    }
+}
+
+.a-login{
+    padding: 10px;
+    background-color: #f37d51;
+    border-radius: 10px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.esp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
