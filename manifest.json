@@ -2,8 +2,8 @@
     "theme_color": "#2b2b2b",
     "background_color": "#35caf6",
     "display": "fullscreen",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "/Project-Benchmarket-CSS/",
+    "start_url": "/Project-Benchmarket-CSS/",
     "name": "BenchMarket",
     "short_name": "benchmarket",
     "icons": [
