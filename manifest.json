@@ -3,7 +3,7 @@
     "background_color": "#35caf6",
     "display": "fullscreen",
     "scope": "/Project-Benchmarket-CSS/",
-    "start_url": "/Project-Benchmarket-CSS/",
+    "start_url": "/",
     "name": "BenchMarket",
     "short_name": "benchmarket",
     "icons": [

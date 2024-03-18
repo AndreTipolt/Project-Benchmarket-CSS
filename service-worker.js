@@ -3,9 +3,8 @@ self.addEventListener('install', function (event) {
     caches.open('static-v1').then(function (cache) {
       return cache.addAll([
         '/',
-        '/styles/main.css',
-        '/script/main.js',
-        '/images/logo.png'
+        '/styles/style.css',
+        '/js/js.js',
       ]);
     })
   );
